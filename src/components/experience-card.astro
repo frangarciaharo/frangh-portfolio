@@ -1,0 +1,86 @@
+---
+import json from "../data/cv.json";
+const pageinfo = json.experience;
+---
+
+<div>
+    <h2>Experiencia</h2>
+    <div class="contenedor">
+        {pageinfo.map((exp => (
+            <div class="contenedor-content">
+                <div class="content">
+                    <div class="content-img">
+                        <img src={exp["company-img"]} alt={`Logo ${exp.company}`} />
+                    </div>
+                    <div class="content-inside">
+                        <span class="m-0 company">{exp.company}</span>
+                        <span class="m-0 position">{exp.position}</span>
+                        <span class="duration">{exp.duration}</span>
+                    </div>
+                </div>
+            </div>
+        )))}
+    </div>
+</div>
+
+<style>
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+       .contenedor-content{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .contenedor-content::after {
+        content: '';
+        position: absolute;
+        width: 43%;
+        height: 1px; /* Grosor de la línea */
+        background-color: #ccc; /* Color de la línea */
+        margin-top: 20px;
+    }
+
+    .contenedor-content:last-child::after {
+        content: none; /* Eliminar la línea en el último proyecto */
+    }
+    .content{
+        display: flex;
+        gap: 10px;
+    }
+    .content-img img{
+        border-radius: 12px;
+        height: 56px;
+    }
+    .content-inside{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .m-0{
+        margin: 0;
+    }
+    .company{
+        font-family: sans-serif;
+        font-weight: 600;
+        --tw-text-opacity: 1;
+        color: rgb(30 41 59 / var(--tw-text-opacity));
+        font-size: 20px;
+    }
+    .position{
+        font-family: sans-serif;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));
+        font-size: 18px;
+    }
+    .duration{
+        font-family: monospace;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(100 116 139 / var(--tw-text-opacity));
+        font-size: 14px;
+    }
+</style>
+

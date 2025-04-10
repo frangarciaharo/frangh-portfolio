@@ -1,0 +1,68 @@
+---
+import Button from "../components/button.astro";
+import paginas from "../data/cv.json";
+
+const pageinfo = paginas.blog_pos;
+
+interface Props {
+    name: string;
+    description?: string;
+    sumary?: string;
+    button?: { text: string; link?: string };
+}
+
+const {
+    name = "",
+    description = "",
+    sumary = pageinfo,
+    button = { text: "Más Información", link: "/information" }
+} = Astro.props;
+---
+<section>
+    <div class="informacion-presentacion">
+        <h1>{name}</h1>
+        <h2>{description}</h2>
+        <p class="sumary">{sumary}</p>
+        <Button text={button.text} link={button.link} />
+    </div>
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 36rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+        padding-bottom: 25px;
+    }
+    .informacion-presentacion h1 {
+        font-size: 36px;
+        line-height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    .informacion-presentacion h2 {
+        font-size: 24px;
+        margin: 0;
+        line-height: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(100 116 139);
+        font-weight: 400;
+        opacity: 1;
+    }
+    .sumary {
+        font-size: 20px;
+        font-family: monospace;
+        font-weight: normal;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));
+    }
+
+    @media (max-width: 850px) {
+        .sumary{
+            text-wrap: balance;
+            width: 500px;
+        }
+    }
+</style>

@@ -1,0 +1,107 @@
+{
+    "name": "Alex Ferrer",
+    "title": "Desenvolupador Web Full Stack",
+    "profile_summary": "Desenvolupador web apassionat per crear aplicacions web escalables i amb una experiència pràctica sòlida en el desenvolupament frontend i backend. Amb més de 5 anys d'experiència en tecnologies modernes com React, Node.js i Vue.js, em dedico a dissenyar i implementar solucions que millorin l'experiència de l'usuari i optimitzin el rendiment de les aplicacions. La meva especialització en arquitectures d'aplicacions escalables i el treball amb equips multidisciplinaris m'ha permès afrontar reptes tècnics i crear productes amb un gran impacte. Em motiva el desenvolupament d'interfícies intuïtives que permetin als usuaris interactuar de manera fàcil i eficient amb les aplicacions.",
+    "contact": {
+        "email": "alex.ferrer@example.com",
+        "phone": "+34 555 123 456",
+        "location": "Gavà, Catalunya",
+        "website": "https://alexferrer.dev",
+        "linkedin": "https://www.linkedin.com/in/alexferrer",
+        "github": "https://github.com/alexferrer"
+    },
+    "skills": [
+        "JavaScript", "TypeScript", "React", "Astro", "Vue.js",
+        "Node.js", "Express.js", "MongoDB", "PostgreSQL",
+        "HTML", "CSS", "SASS", "TailwindCSS", "Bootstrap",
+        "Git", "Docker", "CI/CD", "Testing (Jest, Cypress)"
+    ],
+    "experience": [{
+            "position": "Desenvolupador Full Stack",
+            "company": "TechSolutions",
+            "location": "Barcelona, Catalunya",
+            "duration": "2021 - Present",
+            "responsibilities": [
+                "Desenvolupament i manteniment d'aplicacions web amb React i Node.js.",
+                "Implementació de bases de dades amb PostgreSQL i MongoDB.",
+                "Integració d'APIs REST i GraphQL.",
+                "Millora del rendiment i accessibilitat de les aplicacions."
+            ]
+        },
+        {
+            "position": "Desenvolupador Frontend",
+            "company": "DigitalApps",
+            "location": "Barcelona, Catalunya",
+            "duration": "2021 - 2022",
+            "responsibilities": [
+                "Creació de components UI reutilitzables amb React i TailwindCSS.",
+                "Optimització de la càrrega de pàgines amb tècniques de lazy loading i code splitting.",
+                "Implementació de proves unitàries i e2e amb Jest i Cypress."
+            ]
+        },
+        {
+            "position": "Desenvolupador Junior",
+            "company": "WebTech",
+            "location": "Gavà, Catalunya",
+            "duration": "2018 - 2021",
+            "responsibilities": [
+                "Disseny i implementació de components interactius amb Vue.js.",
+                "Col·laboració en el desenvolupament de funcions backend amb Node.js.",
+                "Millora de la UX/UI amb enfocament en la facilitat d'ús i l'accessibilitat.",
+                "Integració d'APIs i millora de la seguretat de les aplicacions."
+            ]
+        }
+    ],
+    "education": [{
+            "degree": "FP de Desenvolupament d'Aplicacions Web",
+            "institution": "FP Núria",
+            "year": "2012 - 2014"
+        },
+        {
+            "degree": "Grau en Enginyeria Informàtica",
+            "institution": "Universitat Pompeu Fabra",
+            "year": "2014 - 2018"
+        }
+    ],
+    "languages": [
+        { "language": "Català", "level": "Nadiu" },
+        { "language": "Espanyol", "level": "Nadiu" },
+        { "language": "Anglès", "level": "Avançat" }
+    ],
+    "projects": [{
+            "name": "TaskManager App",
+            "description": "Aplicació de gestió de tasques amb React i Firebase.",
+            "url": "https://taskmanager.dev",
+            "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg"
+        },
+        {
+            "name": "E-commerce Platform",
+            "description": "Plataforma de comerç electrònic desenvolupada amb Vue.js i Node.js.",
+            "url": "https://ecommerce.example.com",
+            "image": "https://images.pexels.com/photos/2265482/pexels-photo-2265482.jpeg"
+        },
+        {
+            "name": "Blog CMS",
+            "description": "Sistema de gestió de continguts per blogs amb Astro i Markdown.",
+            "url": "https://blogcms.dev",
+            "image": "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg"
+        },
+        {
+            "name": "Fitness Tracker",
+            "description": "Aplicació per monitoritzar entrenaments i progrés físic.",
+            "url": "https://fitnesstracker.dev",
+            "image": "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg"
+        }
+    ],
+    "blog_posts": [{
+            "title": "Optimització de React: Com millorar el rendiment de la teva aplicació",
+            "summary": "Explorem tècniques com memoization, lazy loading i code splitting per optimitzar aplicacions React.",
+            "date": "15-02-2024"
+        },
+        {
+            "title": "Node.js i Express: Bones pràctiques per al desenvolupament d'APIs",
+            "summary": "Guia completa per estructurar projectes Node.js de manera escalable i eficient.",
+            "date": "20-01-2024"
+        }
+    ]
+}

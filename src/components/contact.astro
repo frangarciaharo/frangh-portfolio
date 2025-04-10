@@ -1,0 +1,53 @@
+---
+import contactData from "../data/cv.json";
+
+---
+
+<section>
+    <div class="contact-container">
+        {Object.entries(contactData.contact).map(([key, value]) => {
+            let name = "";
+            name = key.charAt(0).toUpperCase() + key.slice(1);
+            let show = "";
+            
+            switch (key) {
+                case "linkedin":
+                    show = "in/frangarciaharo";
+                    break;
+                case "github":
+                    show = "git/frangh";
+                    break;
+                default:
+                    show = value;
+                    break;
+            }
+
+            return (
+                <div class="inside-contact-container">
+                    <p>{name}:</p>
+                    <a href={value} target="_blank">{show}</a>
+                </div>
+            );
+        })}
+    </div>
+</section>
+
+<style>
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .inside-contact-container p{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .inside-contact-container a{
+        text-decoration: none;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));
+        font-family: sans-serif;
+    }
+</style>

@@ -1,0 +1,39 @@
+---
+import LenguajeData from "../data/cv.json";
+const lenguajeinfo = LenguajeData.languages;
+---
+<div>
+  <h2>Idiomas</h2>
+  <div class="lenguajes">
+    <div class="lenguajes-content">
+      {lenguajeinfo.map((lenguaje) => (
+        <div class="lenguaje-inside"> {/* Asegúrate de tener un campo 'id' único en cada lenguaje */}
+            <img src={lenguaje.img} alt={lenguaje.language} />
+            <p>{lenguaje.level}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .lenguajes-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center
+  }
+  .lenguaje-inside{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lenguaje-inside img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  filter: grayscale(35%);
+}
+
+</style>

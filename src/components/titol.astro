@@ -1,0 +1,35 @@
+---
+interface Props{
+    title: string;
+    description?: string;
+}
+const {title="", description=""} = Astro.props
+---
+
+<div id="container">
+    <div class="titulo">
+        <h1>{title}</h1>     
+    </div>
+    <div class="descripcion">
+        <p>{description}</p>
+    </div>
+</div>
+
+<style>
+    .titulo{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    }
+    .titulo h1{
+        color: black;
+        font-family: monospace;
+    }
+    .descripcion{
+        width: 500px;
+        margin-top: 25px;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 28.48px;
+        text-wrap: balance;
+    }
+</style>

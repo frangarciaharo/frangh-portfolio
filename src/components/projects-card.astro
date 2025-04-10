@@ -1,0 +1,105 @@
+---
+import json from "../data/cv.json";
+import Button from "./button.astro";
+const pageinfo = json.projects;
+
+interface Props {
+    button?: { text: string; link?: string };
+}
+const {
+    button = { text: "Ver todos los proyectos", link: "/projects" }
+} = Astro.props;
+---
+
+<div class="container">
+    <h2>Proyectos</h2>
+    <div class="contenedor">
+        {pageinfo.map((project => (
+            <a class="slag-project" href={`/projects/${project.slug}`}>
+                <div class="content">
+                    <div class="content-img">
+                        <img src={project["image"]} alt={`Imagen Preview ${project.name}`} />
+                    </div>
+                    <div class="content-inside">
+                        <span class="m-0 project-name">{project.name}</span>
+                        <span class="m-0 project-description">{project.description}</span>
+                    </div>
+                </div>
+            </a>
+        )))}
+    </div>
+    <Button text={button.text} link={button.link} />
+</div>
+
+<style>
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 36rem;
+        gap: 30px;
+        
+    }
+    .slag-project{
+        --tw-bg-opacity: 1;
+        background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+        text-decoration: none;
+        border-radius: 12px;
+    }
+    .slag-project:hover{
+        background-color: rgba(226, 232, 240, .7);
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 2rem;
+    }
+    .content-img img{
+        border-radius: 12px;
+        height: 230px;
+        width: 400px;
+    }
+    .content-inside{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 4px;
+    }
+    .m-0{
+        margin: 0;
+    }
+    .project-name{
+        font-family: sans-serif;
+        font-weight: 600;
+        --tw-text-opacity: 1;
+        color: rgb(30 41 59 / var(--tw-text-opacity));
+        font-size: 20px;
+    }
+    .project-description{
+        font-family: sans-serif;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));
+        font-size: 15px;
+    }
+
+    @media (max-width: 960px) {
+
+    .container h2{
+        text-align: center;
+    }
+    .content{
+        align-items: center;
+    }
+    .content-inside{
+        align-items: center;
+    }
+    .contenedor {
+        grid-template-columns: 1fr; 
+    }
+}
+</style>
+

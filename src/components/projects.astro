@@ -1,0 +1,98 @@
+---
+import json from "../data/cv.json";
+
+const pageinfo = json.projects;
+
+function formatDate(dateString: string | number | Date) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("es-ES", {
+        day: "numeric",
+        month: "short",
+        year: "numeric"
+    });
+}
+---
+
+<div>
+    <div class="contenedor">
+        {pageinfo.map((project => (
+            <a class="slag-project" href={`/projects/${project.slug}`}>
+                <div class="content">
+                    <div class="content-inside">
+                        <span class="m-0 project-name">{project.name}</span>
+                        <span class="m-0 project-date">
+                            Publicado el <time datetime={project.date}>{formatDate(project.date)}</time>
+                        </span>
+                        <span class="m-0 project-description">{project.description}</span>
+                    </div>
+                </div>
+            </a>
+        )))}
+    </div>
+</div>
+
+<style>
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 36rem;
+        gap: 30px;
+        
+    }
+    .slag-project{
+        text-decoration: none;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .slag-project::after {
+        content: '';
+        position: absolute;
+        width: 43%;
+        height: 1px; /* Grosor de la línea */
+        background-color: #ccc; /* Color de la línea */
+    margin-top: 30px;
+    }
+
+    .slag-project:last-child::after {
+        content: none; /* Eliminar la línea en el último proyecto */
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .content-inside{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 4px;
+    }
+    .m-0{
+        margin: 0;
+    }
+    .project-name{
+        font-family: sans-serif;
+        font-weight: 600;
+        --tw-text-opacity: 1;
+        color: rgb(30 41 59 / var(--tw-text-opacity));
+        font-size: 24px;
+    }
+    .project-date{
+        font-family: monospace;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));
+        font-size: 14px;
+    }
+    .project-description{
+        font-family: sans-serif;
+        font-weight: 500;
+        --tw-text-opacity: 1;
+        color: rgb(51 65 85 / var(--tw-text-opacity));
+        font-size: 16px;
+    }
+</style>
+

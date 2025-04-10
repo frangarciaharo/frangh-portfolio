@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Fran García - ERROR 404</title>
+	</head>
+	<body>
+		<div class="contenedor">
+			<slot />
+		</div>
+	</body>
+</html>
+
+<style>
+	/* Asegúrate de que html y body ocupen toda la altura */
+	html, body {
+		height: 100%; /* Esto es esencial para llenar la pantalla */
+		margin: 0;
+		--tw-bg-opacity: 1;
+		background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+	}
+
+	.contenedor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 36rem; 
+	}
+</style>

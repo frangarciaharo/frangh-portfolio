@@ -1,0 +1,36 @@
+---
+import Navegacion from '../components/Navegacion.astro';
+import Footer from '../components/Footer.astro';
+---
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Fran García - DAW Student</title>
+	</head>
+	<body>
+		<div class="contenedor">
+			<Navegacion />
+			<slot />
+			<Footer />
+		</div>
+	</body>
+</html>
+<style>
+	html,
+	body {
+		margin: 0;
+		--tw-bg-opacity: 1;
+    	background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+		display: flex; 
+		justify-content: center;
+	}
+	.contenedor{
+		display: flex;
+		flex-direction: column;                                                                                                  º
+		max-width: 36rem;
+	}
+</style>
