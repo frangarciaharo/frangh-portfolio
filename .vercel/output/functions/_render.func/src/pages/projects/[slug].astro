@@ -1,0 +1,62 @@
+---
+import projectsdata from '../../data/cv.json';
+import Layout from '../../layouts/Layout.astro';
+
+// FUNCÍO QUE RETORNA TOTES LES RUTES DINÀMIQUES PER GENERAR A LA COMPILACIÓ
+export async function getStaticPaths(){
+    // MAPEAR LOS PROYECTOS PARA GENERAR LOS PARAMETROS ID PARA CADA RUTA.
+    const paths = projectsdata.projects.map(project => ({
+        params: {slug: project.slug} //EL ID SERA PARA ACCEDER AL SLUG DE CADA UNO DE LOS PROJECTOS
+    }))
+    return paths;
+}
+
+// OBTENER LA ID DE LA RUTA DINÀMICA
+const {slug} = Astro.params;
+
+// BUSCAMOS EL PROYECTO POR ID
+const project = projectsdata.projects.find(project => project.slug == slug);
+
+// Si no o encuentras lanza error
+if (!project){
+    throw new Error('Proyecto no encontrado');
+}
+---
+
+<Layout>
+    <div class="contenedor">
+        <div class="name-project">
+            <h1>{project.name}</h1>
+        </div>
+        <div class="info-project">
+            <img src={project.image} alt={`Imagen Preview ${project.name}`}>
+            <div class="info-project-inside">
+                <p>{project.description}</p>
+                <p>{project.date}</p>
+            </div>
+            <div class="demo-container">
+                <a href={project.url}>Demo {project.name}</a>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+
+<style>
+    .name-project{
+        text-align: center;
+    }
+    .info-project img{
+        height: 400px;
+    }
+    .info-project-inside{
+        display: flex;
+        justify-content: space-between;
+    }
+    .demo-container{
+        text-align: center;
+    }
+    .demo-container a{
+        text-decoration: none;
+    }
+</style>
