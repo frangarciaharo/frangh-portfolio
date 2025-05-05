@@ -5,18 +5,18 @@ import 'clsx';
 
 const $$Navegacion = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<header data-astro-cid-hxf7jpfn> <div class="header-inside" data-astro-cid-hxf7jpfn> <a class="logo" href="/" data-astro-cid-hxf7jpfn> <span data-astro-cid-hxf7jpfn>FGH</span> </a> <nav data-astro-cid-hxf7jpfn> <a href="/information" data-astro-cid-hxf7jpfn>Información</a> <a href="/contact" data-astro-cid-hxf7jpfn>Contacto</a> </nav> </div> </header> `;
-}, "D:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/components/Navegacion.astro", void 0);
+}, "G:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/components/Navegacion.astro", void 0);
 
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<footer data-astro-cid-sz7xmlte> <div class="footer-inside" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>© 2010 - 2025 / Fran García</p> <a href="#" data-astro-cid-sz7xmlte>View Source</a> </div> </footer> `;
-}, "D:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/components/Footer.astro", void 0);
+}, "G:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/components/Footer.astro", void 0);
 
 const $$Astro = createAstro();
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;
   return renderTemplate`<html lang="es" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>Fran García - DAW Student</title>${renderHead()}</head> <body data-astro-cid-sckkx6r4> <div class="contenedor" data-astro-cid-sckkx6r4> ${renderComponent($$result, "Navegacion", $$Navegacion, { "data-astro-cid-sckkx6r4": true })} ${renderSlot($$result, $$slots["default"])} ${renderComponent($$result, "Footer", $$Footer, { "data-astro-cid-sckkx6r4": true })} </div> </body></html>`;
-}, "D:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/layouts/Layout.astro", void 0);
+}, "G:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/layouts/Layout.astro", void 0);
 
 const name = "Fran García Haro";
 const post = "Desarrollador Web";

@@ -1,9 +1,9 @@
 import { c as createComponent, m as maybeRenderHead, b as addAttribute, r as renderTemplate, d as renderComponent } from '../chunks/astro/server_nzPgjIaO.mjs';
 import 'kleur/colors';
-import { j as json, $ as $$Layout } from '../chunks/cv_BzduYj_9.mjs';
+import { j as json, $ as $$Layout } from '../chunks/cv_Cw_lepjJ.mjs';
 import 'clsx';
 /* empty css                                   */
-import { $ as $$Titol } from '../chunks/titol_GxKvrr-I.mjs';
+import { $ as $$Titol } from '../chunks/titol_B12a1gBM.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Contact$1 = createComponent(($$result, $$props, $$slots) => {
@@ -24,14 +24,14 @@ const $$Contact$1 = createComponent(($$result, $$props, $$slots) => {
     }
     return renderTemplate`<div class="inside-contact-container" data-astro-cid-4jmlleyw> <p data-astro-cid-4jmlleyw>${name}:</p> <a${addAttribute(value, "href")} target="_blank" data-astro-cid-4jmlleyw>${show}</a> </div>`;
   })} </div> </section> `;
-}, "D:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/components/contact.astro", void 0);
+}, "G:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/components/contact.astro", void 0);
 
 const $$Contact = createComponent(($$result, $$props, $$slots) => {
   const pageinfo = json.blog_pos[1];
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Titol", $$Titol, { "title": pageinfo.entradas[2].title, "description": pageinfo.entradas[2].summary })} ${renderComponent($$result2, "Contacto", $$Contact$1, {})} ` })}`;
-}, "D:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/pages/contact.astro", void 0);
+}, "G:/CEFP NURIA/DAW/DAW_0615-DissenyInterf\xEDciesWeb/ASTRO/frangh-portfolio/src/pages/contact.astro", void 0);
 
-const $$file = "D:/CEFP NURIA/DAW/DAW_0615-DissenyInterfíciesWeb/ASTRO/frangh-portfolio/src/pages/contact.astro";
+const $$file = "G:/CEFP NURIA/DAW/DAW_0615-DissenyInterfíciesWeb/ASTRO/frangh-portfolio/src/pages/contact.astro";
 const $$url = "/contact";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
