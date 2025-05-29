@@ -27,6 +27,7 @@ if (!project){
     <div class="contenedor">
         <div class="name-project">
             <h1>{project.name}</h1>
+             <p>{project.date}</p>
         </div>
         <div class="info-project">
             <div class="img-project-contenedor">
@@ -37,11 +38,10 @@ if (!project){
                 <p>{project.description}</p>
                 <p>{project.objective}</p>
                 <p>{project.eines}</p>
-                <p>{project.date}</p>
             </div>
             <div class="demo-container">
                 <video autoplay loop muted src={project.demo} class="demo-video"></video>
-                <a href={project.url}>Demo {project.name}</a>
+                <a href={project.url}>Web {project.name}</a>
             </div>
         </div>
     </div>
@@ -58,6 +58,8 @@ if (!project){
         margin: 1px;
     }
     .name-project{
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
     .info-project img{
