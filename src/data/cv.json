@@ -155,13 +155,7 @@
             "url": "https://vortex-frangarciaharo.netlify.app/",
             "image": "/assets/projects/portada-vortexx-web.webp",
             "peu": "CC BY-SA",
-            "eines": {
-                "HTML5": "/assets/skills/html5.svg",
-                "CSS3": "/assets/skills/CSS3.svg",
-                "Figma": "/assets/skills/workbench.svg",
-                "Midjourney": "/assets/skills/Midjourney.svg",
-                "Coolors": "/assets/skills/coolors.svg"
-            },
+            "eines": "HTML5, CSS3, FIGMA, Coolors y Midjourney",
             "date": "2025-05-22"
         }
     ]
