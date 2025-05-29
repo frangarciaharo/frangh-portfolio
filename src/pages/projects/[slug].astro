@@ -29,8 +29,10 @@ if (!project){
             <h1>{project.name}</h1>
         </div>
         <div class="info-project">
-            <img src={project.image} alt={`Imagen Preview ${project.name}`}>
-            <p class="liencia-imagen">{project.peu}</p>
+            <div class="img-project-contenedor">
+                <img src={project.image} alt={`Imagen Preview ${project.name}`}>
+                <p class="liencia-imagen">Llicencia {project.peu}</p>
+            </div>
             <div class="info-project-inside">
                 <p>{project.description}</p>
                 <p>{project.date}</p>
@@ -44,6 +46,13 @@ if (!project){
 
 
 <style>
+    .img-project-contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-project-contenedor img{
+        margin: 0;
+    }
     .name-project{
         text-align: center;
     }
