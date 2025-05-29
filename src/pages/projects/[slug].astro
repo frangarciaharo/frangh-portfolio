@@ -35,6 +35,15 @@ if (!project){
             </div>
             <div class="info-project-inside">
                 <p>{project.description}</p>
+                <p>{project.objective}</p>
+                 {Object.entries(project.eines).map(([key, value]) => {
+                    return (
+                        <div class="inside-skills-container">
+                            <p>{key}</p>
+                            <img src={value}/>
+                        </div>
+                    );
+                })}
                 <p>{project.date}</p>
             </div>
             <div class="demo-container">

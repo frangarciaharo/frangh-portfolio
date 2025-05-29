@@ -151,9 +151,17 @@
             "slug": "vortexx-drink",
             "name": "Vortexx Drink",
             "description": "Es una pàgina web moderna i visualment impactant per promocionar 'Vortexx'",
+            "objective": "Crear una pàgina web moderna i visualment impactant per promocionar una beguda energètica pensada per a persones actives i creatives.",
             "url": "https://vortex-frangarciaharo.netlify.app/",
             "image": "/assets/projects/portada-vortexx-web.webp",
             "peu": "CC BY-SA",
+            "eines": {
+                "HTML5": "/assets/skills/html5.svg",
+                "CSS3": "/assets/skills/CSS3.svg",
+                "Figma": "/assets/skills/workbench.svg",
+                "Midjourney": "/assets/skills/Midjourney.svg",
+                "Coolors": "/assets/skills/coolors.svg"
+            },
             "date": "2025-05-22"
         }
     ]
