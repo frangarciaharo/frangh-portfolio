@@ -113,6 +113,7 @@
             "description": "Aplicación de gestión de tareas con React y Firebase.",
             "url": "https://taskmanager.dev",
             "image": "/assets/projects/TaskManagerApp.jpeg",
+            "peu": "CC BY-SA",
             "date": "2024-12-31"
         },
         {
@@ -122,6 +123,7 @@
             "description": "Plataforma de comercio electrónico desarrollada con Vue.js y Node.js.",
             "url": "https://ecommerce.example.com",
             "image": "/assets/projects/E-commercePlatform.jpeg",
+            "peu": "CC BY-SA",
             "date": "2024-12-31"
         },
         {
@@ -131,6 +133,7 @@
             "description": "Sistema de gestión de contenidos para blogs con Astro y Markdown.",
             "url": "https://blogcms.dev",
             "image": "/assets/projects/seo.jpeg",
+            "peu": "CC BY-SA",
             "date": "2024-12-31"
         },
         {
@@ -140,6 +143,7 @@
             "description": "Aplicación para monitorizar entrenamientos y progreso físico.",
             "url": "https://fitnesstracker.dev",
             "image": "/assets/projects/fitness-app.jpeg",
+            "peu": "CC BY-SA",
             "date": "2024-12-31"
         },
         {
@@ -149,6 +153,7 @@
             "description": "Es una pàgina web moderna i visualment impactant per promocionar 'Vortexx'",
             "url": "https://vortex-frangarciaharo.netlify.app/",
             "image": "/assets/projects/portada-vortexx-web.webp",
+            "peu": "CC BY-SA",
             "date": "2025-05-22"
         }
     ]
