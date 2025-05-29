@@ -141,6 +141,15 @@
             "url": "https://fitnesstracker.dev",
             "image": "/assets/projects/fitness-app.jpeg",
             "date": "2024-12-31"
+        },
+        {
+            "id": "5",
+            "slug": "vortexx-drink",
+            "name": "Vortexx Drink",
+            "description": "Crear una pàgina web moderna i visualment impactant per promocionar 'Vortexx', una beguda energètica pensada per a persones actives i creatives. L'objectiu és transmetre energia, velocitat i modernitat, combinant una estètica potent amb una navegació clara i funcional. La web ha estat dissenyada amb HTML i CSS purs, amb un enfocament responsive per adaptar-se a tot tipus de dispositius.",
+            "url": "https://vortex-frangarciaharo.netlify.app/",
+            "image": "/assets/projects/portada-vortexx-web.webp",
+            "date": "2025-05-22"
         }
     ]
 }
