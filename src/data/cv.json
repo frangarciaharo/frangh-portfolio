@@ -157,6 +157,7 @@
             "demo": "/assets/projects/demos/demo-vortexx.mp4",
             "peu": "CC BY-SA",
             "eines": "HTML5, CSS3, FIGMA, Coolors y Midjourney",
+            "reptes": "Mantenir una coherència visual entre totes les imatges generades, Optimitzar els fitxers d’imatge per a web sense perdre qualitat, Aplicar efectes CSS (hover, transicions, animacions) per donar vida als elements sense recórrer a JavaScript., Assegurar una accessibilitat bàsica (text alternatiu a imatges, contrastos adequats, etc.).",
             "date": "2025-05-22"
         }
     ]
