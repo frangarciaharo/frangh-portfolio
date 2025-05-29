@@ -40,7 +40,7 @@ if (!project){
                 <p>{project.date}</p>
             </div>
             <div class="demo-container">
-                <video src={project.demo} class="demo-video"></video>
+                <video autoplay loop muted src={project.demo} class="demo-video"></video>
                 <a href={project.url}>Demo {project.name}</a>
             </div>
         </div>
@@ -69,7 +69,13 @@ if (!project){
         justify-content: space-between;
     }
     .demo-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
         text-align: center;
+    }
+    .demo-video{
+        height: 400px;
     }
     .demo-container a{
         text-decoration: none;
